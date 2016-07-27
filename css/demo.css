@@ -86,13 +86,9 @@ body {
 .demo-select,.demo-input {
 	width: 100%;
 }
-<<<<<<< HEAD
-.demo-pageTitle {
-=======
 
 .demo-pageTitle,
 .demo-Pagination {
->>>>>>> origin/master
 	width: 50%;
 	height: 130px;
 }
@@ -304,4 +300,9 @@ body {
 }
 .demo-input-item{
 	width: 200px !important;
+	z-index: 999;
+	position: relative;
+}
+.demo-search-input{
+	width: 232px;
 }
