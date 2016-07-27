@@ -40,7 +40,6 @@
   .date_selector .year_nav {
     float: right;
     width: 35%;
-    margin-right: -8px; /* Compensates for cell borders */
   }
   .date_selector .month_name, .date_selector .year_name {
     font-weight: bold;
@@ -53,7 +52,7 @@
     top: 0;
     width: 18px;
     height: 18px;
-    line-height: 17px;
+    line-height: 15px;
     font-weight: bold;
     color: #646F7B;
     text-align: center;
