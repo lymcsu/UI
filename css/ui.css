@@ -914,7 +914,6 @@
 
 
 /*  页面标题CSS  */
-
 .viewFramework-index-title {
 	width: 100%;
 	height: 62px;
@@ -929,7 +928,6 @@
 
 
 /*  页面标题左侧竖线   */
-
 .viewFramework-index-title:before {
 	content: '';
 	width: 2px;
@@ -942,10 +940,85 @@
 
 
 /* 树形菜单CSS */
-.tree {
-	color: #46CFB0;
+.tree,
+.special-tree {
+	color: #24AC7E;
 	width: 100%;
 	overflow: hidden;
+}
+
+.special-tree {
+	background-color: #FFF;
+}
+
+/*.secondary-li,
+.thired-li,
+.fourth-li {
+	display: none;
+}*/
+
+.primary-li,
+.secondary-li,
+.thired-li,
+.fourth-li {
+	width: 100%;
+	line-height: 20px;
+	float: left;
+}
+
+.primary-li ul {
+	width: 100%;
+	float: left;
+}
+
+.special-tree-btn,
+.primary-li span {
+	float: left;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.special-tree-btn {
+	height: 20px;
+	width: 20px;
+	background-color: #FFF;
+}
+
+.special-tree-btn:hover {
+	background-color: #FAFAFA;
+}
+
+.primary-li {
+	padding-left: 5px;
+}
+
+.secondary-li {
+	padding-left: 10px;
+}
+
+.thired-li {
+	padding-left: 15px;
+}
+
+.fourth-li {
+	padding-left: 20px;
+}
+
+.fourth-li button {
+	display: none;
+}
+
+.primary-li span {
+	color: #293038;
+	display: block;
+	height: 20px;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+
+.primary-li span:hover {
+	color: #FFF;
+	background-color: #24AC7E;
 }
 
 .tree-primary-items {
