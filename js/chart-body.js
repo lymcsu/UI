@@ -26,55 +26,6 @@ $('body').on('click', '.delete-btn', function(){
 	$('.chart-body').children(' .condition-content,.condition-content2').remove();
 });
 
-$('.tree_choose-alrte-div li').click(function(){
-	$('.tree_choose-alrte-div li').removeClass('checked');
-	$(this).addClass('checked');
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-qitashujuyewu').click(function(){
-	$('#qitashujuyewu').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('.js-alert-liuliangyunying').click(function(){
-	$('#liuliangyunying').fadeIn();
-});
-
-$('#liuliangyunying .tree_choose-alrte-div_close-btn,#liuliangyunying .ok-btn').click(function(){
-	$('#liuliangyunying').fadeOut();
-});
-
 
 $('.tree_choose-alrte-div .ok-btn').click(function(){
 	if ($('.tree_choose-alrte-div_body .col-1-2 li').hasClass('checked')){

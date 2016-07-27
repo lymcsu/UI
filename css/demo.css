@@ -87,8 +87,10 @@ body {
 	width: 100%;
 }
 
-.demo-pageTitle {
+.demo-pageTitle,
+.demo-Pagination {
 	width: 50%;
+	height: 130px;
 }
 
 .demo-pageTitle .demo-panel-title {
