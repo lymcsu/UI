@@ -1,6 +1,13 @@
 @charset "utf-8";
 .placeholder {
 	color: #9DA2B6;
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+    line-height: 32px;
+    z-index: 1;
+    width: 100%;
+    cursor: text;
 }
 .iconBtn {
 	width: 35px;
@@ -78,7 +85,8 @@
 .select-btn a,
 .DeepColor-select-btn a,
 .select-input-select-btn .select-input-select-btn_icon,
-.select-input-search-btn a {
+.select-input-search-btn a,
+.search-input-btn a{
 	width: 30px;
 	height: 30px;
 	display: block;
@@ -88,12 +96,12 @@
 	background: #FFF;
 	text-align: center;
 }
-
 .dropdown-btn a i,
 .select-btn a i,
 .DeepColor-select-btn a i,
 .select-input-select-btn div i,
-.select-input-search-btn a i {
+.select-input-search-btn a i,
+.search-input-btn a i {
 	line-height: 30px;
 	color: #24AC7E;
 	display: block;
@@ -167,13 +175,22 @@
 }
 
 .SpanSelect,
+.SpanInput,
 .Select-input {
 	width: 345px;
 	height: 32px;
 	position: relative;
 }
-
-.SpanSelect span {
+.Input{
+	width: 260px;
+}
+.SearchInput,.DeepColorSearchInput{
+	width: 292px;
+	height: 32px;
+	overflow: hidden;
+	border: 1px solid #E1E6EB;
+}
+.SpanSelect span,.SpanInput > span{
 	display: block;
 	width: 85px;
 	float: left;
@@ -182,6 +199,26 @@
 	text-align: right;
 }
 
+.SpanInput input,.Input input,.SearchInput input,.DeepColorSearchInput input{
+	width: 260px;
+    height: 32px;
+    float: left;
+    background-color: #FAFAFA;
+    padding-left: 10px;
+    border: 1px solid #E1E6EB;
+    line-height: 32px;
+}
+.DeepColorSearchInput input{
+	background-color: #E1E6EB;
+}
+.SearchInput input,.DeepColorSearchInput input{
+	border: 0;
+}
+.SpanInput-input,.Input-input,.SearchInput-input,.DeepColorSearchInput-input{
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
 .select-btn,
 .DeepColor-select-btn {
 	width: 260px;
@@ -196,6 +233,7 @@
 .select-btn a,
 .DeepColor-select-btn a,
 .select-input-search-btn a,
+.search-input-btn a,
 .select-input-select-btn .select-input-select-btn_icon {
 	margin-left: 0;
 }
@@ -261,7 +299,8 @@
 
 .select-input-search-btn,
 .select-input-select-btn,
-.Select-input input {
+.Select-input input,
+.search-input-btn {
 	float: left;
 }
 
