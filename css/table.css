@@ -1,0 +1,480 @@
+@charset "utf-8";
+.right-alert-main table,
+.tabs_body table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.right-alert-main th,
+.tabs_body th {
+	text-align: center;
+}
+
+.right-alert-main thead,
+.right-alert-main tfoot,
+.tabs_body thead,
+.tabs_body tfoot {
+	height: 35px;
+	background-color: #FAFAFA;
+	color: #9DA2B6;
+}
+
+.right-alert-main tr,
+.tabs_body thead tr,
+.tabs_body tbody tr,
+.tabs_body tfoot tr {
+	border: 1px solid #E1E6EB;
+}
+
+
+.tabs_body thead th.operation {
+	text-align: right;
+	padding-right: 15px;
+	width: 180px;
+}
+
+.tabs_body tbody th.operation {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.right-alert-main tbody,
+.tabs_body tbody {
+	font-weight: 100;
+}
+
+.right-alert-main tbody tr,
+.tabs_body tbody tr {
+	height: 40px;
+	border-top: none;
+}
+
+.right-alert-main  tbody .operation button,
+.tabs_body tbody .name,
+.tabs_body tbody .tactics-num,
+.tabs_body tbody .operation button {
+	color: #24AC7E;
+}
+
+.right-alert-main tbody,
+.tabs_body tbody {
+	color: #293038;
+}
+
+.tabs_body th.current-state i {
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 8px;
+}
+
+.right-alert-main tbody th,
+.tabs_body tbody th {
+	font-weight: 300;
+}
+
+.right-alert-main tbody .operation button,
+.tabs_body tbody .operation button {
+	background: none;
+}
+
+.right-alert-main tbody .operation button:after, 
+.tabs_body tbody .operation button:after {
+	content: '';
+	width: 1px;
+	height: 12px;
+	background-color: #E1E6EB;
+	float: right;
+	margin: 3px 5px;
+}
+
+.right-alert-main tfoot,
+.tabs_body tfoot {
+	height: 60px;
+}
+
+.right-alert-main table thead tr th,
+.tabs_body table thead tr th {
+    padding: 8px 8px;
+    font-weight: normal;
+    border-bottom: 1px solid #e1e6eb;
+    background-color: #FAFAFA;
+}
+
+.tabs_body table thead tr .name,
+.tabs_body table tbody tr .name,
+.tabs_body table thead tr .current-state,
+.tabs_body table tbody tr .current-state {
+	padding-left: 8px;
+	text-align: left;
+	width: 180px;
+}
+
+.tabs_body table thead tr .current-state,
+.tabs_body table tbody tr .current-state {
+	padding-left: 50px;
+	width: 180px;
+}
+
+
+.tabs_body tbody .current-state i:before {
+	content: "\e619";
+	color: #F5A623;
+}
+
+.tabs_body tbody tr.running .current-state i:before {
+	content: "\e61a";
+	color: #24AC7E;
+}
+
+.tabs_body tbody .current-state span:before {
+	content: '已暂停';
+}
+
+.tabs_body tbody tr.running .current-state span:before {
+	content: '正在运行';
+}
+
+.tabs_body tbody tr .operation .state-btn:before {
+	content: '开始';
+}
+
+.tabs_body tbody tr.running .operation .state-btn:before {
+	content: '暂停';
+}
+
+.right-alert-main tbody tr.pause .strategy-state i:before {
+	content: "\e619";
+	color: #F5A623;
+}
+
+.right-alert-main tbody tr.running .strategy-state i:before {
+	content: "\e61a";
+	color: #24AC7E;
+}
+
+.right-alert-main tbody tr.stop .strategy-state i:before {
+	content: "\e613";
+	color: #E68181;
+}
+
+.right-alert-main tbody tr.pause .strategy-state span:before {
+	content: '已暂停';
+}
+
+.right-alert-main tbody tr.running .strategy-state span:before {
+	content: '执行中';
+}
+
+.right-alert-main tbody tr.stop .strategy-state span:before {
+	content: '已结束';
+}
+
+.right-alert-main tbody tr .strategy-state span:before,
+.right-alert-main tbody tr .strategy-state i:before {
+	display: inline-block;
+}
+
+.right-alert-main tbody tr .strategy-state i {
+	font-size: 14px;
+}
+
+.right-alert-main tbody tr .strategy-state span {
+	margin-right: 5px;
+}
+
+
+.bulk-operation {
+	position: relative;
+	width: 108px;
+	cursor: pointer;
+}
+
+.bulk-operation-btn {
+	height: 30px;
+	border: 1px solid #E1E6EB;
+	line-height: 30px;
+	padding-left: 14px;
+	box-sizing: content-box;
+	background-color: #FAFAFA;
+}
+
+.bulk-operation-btn:hover {
+	background-color: #f5f5f5;
+}
+
+.bulk-operation-btn span {
+	display: block;
+	float: left;
+	margin-right: 14px;
+}
+
+.bulk-operation-btn a {
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: right;
+	border-left: 1px solid #E1E6EB;
+	float: left;
+	background: #FFF;
+}
+
+.bulk-operation-btn a i {
+	line-height: 30px;
+	color: #24AC7E;
+	display: block;
+	text-align: center;
+}
+
+.bulk-operation ul {
+    position: absolute;
+    width: 100%;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #E1E6EB;
+    border-top: noen;
+}
+
+.bulk-operation ul li:first-child {
+	border-top: none;
+}
+
+.dropdown-menu > li > a {
+	padding: 0;
+	line-height: inherit;
+}
+
+.bulk-operation.open ul {
+	display: block;
+}
+
+.bulk-operation ul li {
+	height: 30px;
+	border-top: 1px solid #eaedf1;
+	text-align: left;
+	padding: 0 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #9DA2B6;
+}
+
+.bulk-operation ul li a {
+	color: inherit
+}
+
+.bulk-operation.open .bulk-operation-btn {
+	background-color: #FFF;
+	color: #333;
+}
+
+.bulk-operation ul li:hover {
+	background-color: #f7f7f7;
+	color: #333;
+}
+
+.bulk-operation.open > ul {
+	display: block;
+}
+
+.pagination-info {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0px 16px;
+    color: #888;
+}
+
+table tfoot tr td {
+    padding: 8px;
+    border-bottom: 1px solid #e1e6eb;
+    vertical-align: middle;
+}
+
+.pagination {
+	display: inline-block;
+    padding-left: 0;
+    margin: 0px;
+    vertical-align: middle;
+    border-radius: 0px;
+}
+
+.pagination-goto {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0px 0 0 15px;
+}
+
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {margin-left: 0;border-top-left-radius: 4px;border-bottom-left-radius: 4px;}.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {color: #777;cursor: not-allowed;background-color: #fff;border-color: #ddd;}.pagination > li > a, .pagination > li > span {position: relative;float: left;padding: 6px 12px;margin-left: -1px;line-height: 1.42857143;color: #428bca;text-decoration: none;background-color: #fff;border: 1px solid #ddd;}
+
+
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+.pagination > li {display: inline;}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #24AC7E;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #24AC7E;
+    border-color: #24AC7E;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.pagination-goto input.ipt {
+    width: 40px;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 12px;
+    height: 32px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.pagination-goto .btn {
+    padding: 8px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+th[width='10'] {
+	padding: 8px 8px;
+}
+
+.form-control:focus {
+	border-color: #24AC7E;
+	outline: 0;
+	box-shadow: none;
+}
+
+.tabs_body table tbody .name {
+	cursor: pointer;
+}
+
+.tabs_body tbody th.name a.dialog {
+	display: block;
+	height: 39px;
+	line-height: 40px;
+}
+
+.tabs_body tbody th.name a.dialog:hover {
+	text-decoration: underline;
+}
+
+.checked-box {
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+
+.checked-box i:before {
+	content: "\e607";
+	font-size: 12px;
+	color: #E1E6EB;
+	float: left;
+}
+
+.checked-box.checked i:before {
+	content: "\e606";
+	color: #24AC7E;
+}
+
+.pull-right {
+	float: right!important
+}
+
+.pull-left {
+	float: left!important
+}

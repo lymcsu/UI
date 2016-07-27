@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>智能营销平台UI</title>
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<link rel="stylesheet" href="lib/font/iconfont.css" />
+		<link rel="stylesheet" href="lib/css/animate.min.css" />
+		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+	</head>
+
+	<body>
+		<div class="demo">
+			<div class="demo-title">
+				<div class="demo-logo">
+					<div class="iconBg">
+						<i class="iconfont icon-chinamobile"></i>
+					</div>
+					<span>Aisainfo-CMC</span>
+					<p>CMC-ATHNA UI</p>
+				</div>
+			</div>
+
+			<h1 class="demo-section-title">基础样式</h1>
+			<div class="demo-row demo-buttons">
+				<h3 class="demo-panel-title">Buttons</h3>
+				<li class="demo-items">
+					<button class="iconBtn">
+						<i class="iconfont icon-search"></i>
+					</button>
+				</li>
+
+				<li class="demo-items">
+					<button class="iconTextBtn">
+						<i class="iconfont icon-add"></i>
+						新增
+					</button>
+				</li>
+
+				<li class="demo-items">
+					<button class="iconTextBtn-import">
+						<i class="iconfont icon-search"></i>
+						查询
+					</button>
+				</li>
+
+				<li class="demo-items">
+					<button class="TextBtn">新增</button>
+				</li>
+
+				<li class="demo-items">
+					<button class="TextBtn-import">查询</button>
+				</li>
+			</div>
+
+			<div class="demo-row demo-dropdown">
+				<h3 class="demo-panel-title">Dropdown</h3>
+				<li class="demo-items">
+					<div class="dropdown-body">
+						<button class="dropdown-btn">默认<a><i class="iconfont icon-expandmore"></i></a></button>
+						<ul class="dropdown-menu">
+							<li><a>自定义</a></li>
+							<li><a>自定义</a></li>
+							<li><a>自定义</a></li>
+							<li><a>自定义</a></li>
+						</ul>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row demo-select">
+				<h3 class="demo-panel-title">Select</h3>
+				<li class="demo-items">
+					<div class="SpanSelect">
+						<span>自定义：</span>
+						<button class="select-btn">
+							<p></p>
+							<a><i class="iconfont icon-expandmore"></i></a>
+						</button>
+						<ul class="select-menu">
+							<li class="choosed">全部</li>
+							<li>自定义</li>
+							<li>自定义2</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="demo-items">
+					<div class="DeepColorSelect">
+						<button class="DeepColor-select-btn">
+							<p></p>
+							<a><i class="iconfont icon-expandmore"></i></a>
+						</button>
+						<ul class="DeepColor-select-menu">
+							<li class="choosed">全部</li>
+							<li>自定义</li>
+							<li>自定义2</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="demo-items">
+					<div class="Select-input">
+						<div id="store-selector" class="select-input-select-btn">
+							<div class="select-input-select-btn_icon"><i class="iconfont icon-expandmore"></i></div>
+							<div onclick="$('#store-selector').removeClass('hover')" class="close"><i class="iconfont icon-close"></i></div>
+						</div>
+						<input class="areaText" type="text" />
+						<button class="select-input-search-btn">
+							<a><i class="iconfont icon-search"></i></a>
+						</button>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row">
+				<h3 class="demo-panel-title">Pagination</h3>
+				<li class="demo-items">
+					<div class="page-box">
+						<div class="pagination-info">共有20条，每页显示10条</div>
+						<ul class="pagination">
+
+						</ul>
+						<div class="pagination-goto">
+							<input type="text" class="ipt form-control gotoPageNo">
+							<button type="button" class="btn btn-default goBtn">GO</button>
+							<input type="hidden" class="totalCount" name="totalCount" />
+						</div>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row demo-pageTitle">
+				<h3 class="demo-panel-title">Page Title</h3>
+				<li class="demo-items">
+					<span class="viewFramework-index-title">页面标题</span>
+				</li>
+			</div>
+
+			<div class="demo-row tree-menu">
+				<h3 class="demo-panel-title">Tree Menu</h3>
+				<li class="demo-items">
+					<ul class="tree">
+						<li><span class="tree-primary-items">一级菜单</span>
+							<ul>
+								<li><span class="tree-secondary-items">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items active js-alert-liuliangyunying">三级菜单</span></li>
+										<li><span class="tree-third-items js-alert-qitashujuyewu">三级菜单</span></li>
+									</ul>
+								</li>
+								<li><span class="tree-secondary-items">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items">三级菜单</span></li>
+										<li><span class="tree-third-items">三级菜单</span></li>
+										<li><span class="tree-third-items">三级菜单</span></li>
+									</ul>
+								</li>
+								<li><span class="tree-secondary-items">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items">三级菜单</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span class="tree-primary-items">一级菜单</span>
+							<ul>
+								<li>
+									<div class="tree-secondary-items_search">
+										<input placeholder="搜索框" />
+										<button><i class="iconfont icon-search"></i></button>
+									</div>
+								</li>
+								<li><span class="tree-secondary-items">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单1">四级菜单1</span></li>
+												<li><span title="四级菜单2">四级菜单2</span></li>
+												<li><span title="四级菜单3">四级菜单3</span></li>
+												<li><span title="四级菜单4">四级菜单4</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单">四级菜单</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单1">四级菜单1</span></li>
+												<li><span title="四级菜单2">四级菜单2</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span class="tree-secondary-items">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单1">四级菜单1</span></li>
+												<li><span title="四级菜单2">四级菜单2</span></li>
+												<li><span title="四级菜单3">四级菜单3</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单1">四级菜单</span></li>
+												<li><span title="四级菜单2">四级菜单</span></li>
+												<li><span title="四级菜单3">四级菜单</span></li>
+												<li><span title="四级菜单4">四级菜单</span></li>
+												<li><span title="四级菜单5">四级菜单</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
+											<ul>
+												<li><span title="四级菜单1">四级菜单1</span></li>
+												<li><span title="四级菜单2">四级菜单2</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span class="tree-secondary-items have-chirld">二级菜单</span>
+									<ul>
+										<li><span class="tree-third-items">三级菜单</span></li>
+										<li><span class="tree-third-items">三级菜单</span></li>
+										<li><span class="tree-third-items">三级菜单</span></li>
+										<li><span class="tree-third-items">三级菜单</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span class="tree-primary-items">一级菜单</span>
+							<ul>
+								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
+								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
+								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
+								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</div>
+
+			<div class="demo-row Color-Swatches">
+				<h3 class="demo-panel-title">Color Swatches</h3>
+				<li class="demo-items">
+					<ul class="green">
+						<li>24AC7E</li>
+						<li>1FA075</li>
+					</ul>
+
+					<ul class="black">
+						<li>616B78</li>
+						<li>293038</li>
+					</ul>
+
+					<ul class="white">
+						<li>F1F4F7</li>
+						<li>E1E6EB</li>
+					</ul>
+
+					<ul class="blue">
+						<li>62B5DF</li>
+						<li>559EC3</li>
+					</ul>
+
+					<ul class="purple">
+						<li>9177BC</li>
+						<li>78619E</li>
+					</ul>
+
+					<ul class="red">
+						<li>F26091</li>
+						<li>CF517C</li>
+					</ul>
+
+					<ul class="yellow">
+						<li>FFB840</li>
+						<li>D99D37</li>
+					</ul>
+
+					<ul class="green2">
+						<li>63CBAC</li>
+						<li>53AA90</li>
+					</ul>
+				</li>
+			</div>
+
+			<div class="demo-row demo-chart">
+				<h3 class="demo-panel-title">Chart</h3>
+				<li class="demo-items">
+					<div class='condition-content2 color-blue'>
+						<span>color-blue</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content2 color-purple'>
+						<span>color-purple</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content2 color-yellow'>
+						<span>color-yellow</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content2 color-orange'>
+						<span>color-orange</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content2 color-red'>
+						<span>color-red</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content2 color-green'>
+						<span>color-green</span>
+						<a class='delete-condition2'>
+							<i class='iconfont icon-close'></i>
+						</a>
+					</div>
+
+					<div class='condition-content animated3 fadeIn'>
+						<button class='condition-btn'>或</button>
+						<button class='delete-condition'>
+							<i class='iconfont icon-delete'></i>
+						</button>
+					</div>
+
+					<div class='condition-content animated3 fadeIn'>
+						<button class='condition-btn'>且</button>
+						<button class='delete-condition'>
+							<i class='iconfont icon-delete'></i>
+						</button>
+					</div>
+
+					<div class='condition-content animated3 fadeIn'>
+						<button class='condition-btn'>非</button>
+						<button class='delete-condition'>
+							<i class='iconfont icon-delete'></i>
+						</button>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row demo-tab">
+				<h3 class="demo-panel-title">Tab</h3>
+				<li class="demo-items">
+					<ul class="tabs_menu">
+						<li class="js-tabs-btn1"><a>Tab1</a></li>
+						<li class="current js-tabs-btn2"><a>Tab2</a></li>
+						<li class="js-tabs-btn3"><a>Tab3</a></li>
+						<li class="js-tabs-btn4"><a>Tab4</a></li>
+					</ul>
+
+					<div class="tabs_box">
+						<div class="tabs-wapper js-tabs-div1">
+							我是div1
+						</div>
+
+						<div class="tabs-wapper js-tabs-div2 open">
+							我是div2
+						</div>
+
+						<div class="tabs-wapper js-tabs-div3">
+							我是div3
+						</div>
+
+						<div class="tabs-wapper js-tabs-div4">
+							我是div4
+						</div>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row demo-tab2">
+				<h3 class="demo-panel-title">Tab2</h3>
+				<li class="demo-items">
+					<ul class="tabs_menu2">
+						<li class="js-tabs-btn1"><a>月</a></li>
+						<li class="current js-tabs-btn2"><a>日</a></li>
+						<li class="js-tabs-btn3"><a>时</a></li>
+						<li class="js-tabs-btn4"><a>分</a></li>
+					</ul>
+				</li>
+			</div>
+
+			<div class="demo-row demo-switches">
+				<h3 class="demo-panel-title">Switches</h3>
+				<li class="demo-items">
+					<div class="switches open">
+						<div class="switches-circle"></div>
+					</div>
+					
+					<div class="switches">
+						<div class="switches-circle"></div>
+					</div>
+
+					<div class="switches disabled open">
+						<div class="switches-circle"></div>
+					</div>
+
+					<div class="switches disabled">
+						<div class="switches-circle"></div>
+					</div>
+				</li>
+			</div>
+
+			<div class="demo-row demo-checkeboxes">
+				<h3 class="demo-panel-title">Checkeboxes</h3>
+				<ul class="demo-items">
+					<li>
+						<div class="checked-box checked"><i class="iconfont"></i></div>
+						<span>多选按钮</span>
+					</li>
+					<li>
+						<div class="checked-box all-checked-btn"><i class="iconfont"></i></div>
+						<span>全选按钮</span>
+					</li>
+					<li>
+						<div class="checked-box disabled checked"><i class="iconfont"></i></div>
+						<span>不可选已选中按钮</span>
+					</li>
+					<li>
+						<div class="checked-box disabled"><i class="iconfont"></i></div>
+						<span>不可选未选中按钮</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="demo-row demo-radiobuttons">
+				<h3 class="demo-panel-title">Radio Buttons</h3>
+				<ul class="demo-items">
+					<li>
+						<div class="radio-buttons checked"><i class="iconfont"></i></div>
+						<span>单选按钮</span>
+					</li>
+					<li>
+						<div class="radio-buttons"><i class="iconfont"></i></div>
+						<span>单选按钮</span>
+					</li>
+					<li>
+						<div class="radio-buttons checked disabled"><i class="iconfont"></i></div>
+						<span>不可选已选中按钮</span>
+					</li>
+					<li>
+						<div class="radio-buttons disabled"><i class="iconfont"></i></div>
+						<span>不可选未选中按钮</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="demo-row demo-currentstate">
+				<h3 class="demo-panel-title">Current State</h3>
+				<li class="demo-items">
+					<div></div>
+					<div></div>
+					<div></div>
+				</li>
+			</div>
+		</div>
+		<script type="text/javascript" src="lib/js/es5-shim.js"></script>
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="lib/js/location.js"></script>
+		<!---<<<<   分页组件  >>>>-->
+		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
+		<script type="text/javascript" src="lib/js/jquery.treemenu.js"></script>
+		<script type="text/javascript" src="js/tree-nav.js"></script>
+		<script type="text/javascript" src="lib/js/tipso.min.js"></script>
+		<script type="text/javascript" src="js/chart-body.js"></script>
+		<script type="text/javascript" src="lib/js/tabs.js"></script>
+		<script type="text/javascript" src="js/current.js"></script>
+	</body>
+
+</html>
