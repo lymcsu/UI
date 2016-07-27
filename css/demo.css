@@ -86,8 +86,15 @@ body {
 .demo-select,.demo-input {
 	width: 100%;
 }
+<<<<<<< HEAD
 .demo-pageTitle {
+=======
+
+.demo-pageTitle,
+.demo-Pagination {
+>>>>>>> origin/master
 	width: 50%;
+	height: 130px;
 }
 
 .demo-pageTitle .demo-panel-title {
@@ -99,8 +106,9 @@ body {
 	margin-top: -10px;
 }
 
-.tree-menu .demo-items {
-	width: 190px;
+.tree-menu .demo-items,
+.special-tree-menu .demo-items {
+	width: 180px;
 	float: left;
 	border: 1px solid #E1E6EB;
 	background-color: #F1F4F7;

@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="lib/css/normal.css" />
 		<link rel="stylesheet" href="lib/font/iconfont.css" />
 		<link rel="stylesheet" href="lib/css/animate.min.css" />
-		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="css/ui.css" />
 		<link rel="stylesheet" href="css/demo.css" />
 	</head>
 
@@ -59,12 +59,20 @@
 				<h3 class="demo-panel-title">Dropdown</h3>
 				<li class="demo-items">
 					<div class="dropdown-body">
-						<button class="dropdown-btn">默认<a><i class="iconfont icon-expandmore"></i></a></button>
+						<button class="dropdown-btn">默认<div><i class="iconfont icon-expandmore"></i></div></button>
 						<ul class="dropdown-menu">
-							<li><a>自定义</a></li>
-							<li><a>自定义</a></li>
-							<li><a>自定义</a></li>
-							<li><a>自定义</a></li>
+							<li>
+								<a>自定义</a>
+							</li>
+							<li>
+								<a>自定义</a>
+							</li>
+							<li>
+								<a>自定义</a>
+							</li>
+							<li>
+								<a>自定义</a>
+							</li>
 						</ul>
 					</div>
 				</li>
@@ -120,7 +128,7 @@
 						<span>自定义：</span>
 						<button class="select-btn">
 							<p></p>
-							<a><i class="iconfont icon-expandmore"></i></a>
+							<div><i class="iconfont icon-expandmore"></i></div>
 						</button>
 						<ul class="select-menu">
 							<li class="choosed">全部</li>
@@ -134,7 +142,7 @@
 					<div class="DeepColorSelect">
 						<button class="DeepColor-select-btn">
 							<p></p>
-							<a><i class="iconfont icon-expandmore"></i></a>
+							<div><i class="iconfont icon-expandmore"></i></div>
 						</button>
 						<ul class="DeepColor-select-menu">
 							<li class="choosed">全部</li>
@@ -152,16 +160,16 @@
 						</div>
 						<input class="areaText" type="text" />
 						<button class="select-input-search-btn">
-							<a><i class="iconfont icon-search"></i></a>
+							<div><i class="iconfont icon-search"></i></div>
 						</button>
 					</div>
 				</li>
 			</div>
 
-			<div class="demo-row">
+			<div class="demo-row demo-Pagination">
 				<h3 class="demo-panel-title">Pagination</h3>
 				<li class="demo-items">
-					<div class="page-box">
+					<div class="pull-right page-box">
 						<div class="pagination-info">共有20条，每页显示10条</div>
 						<ul class="pagination">
 
@@ -171,6 +179,7 @@
 							<button type="button" class="btn btn-default goBtn">GO</button>
 							<input type="hidden" class="totalCount" name="totalCount" />
 						</div>
+						<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
 					</div>
 				</li>
 			</div>
@@ -208,15 +217,16 @@
 								</li>
 							</ul>
 						</li>
-						<li><span class="tree-primary-items">一级菜单</span>
+						<li><span class="tree-primary-items open">一级菜单</span>
 							<ul>
-								<li>
+								<li class="li-search">
 									<div class="tree-secondary-items_search">
-										<input placeholder="搜索框" />
+										<span class="placeholder">输入客户群名称</span>
+										<input type="text" autocomplete="off" />
 										<button><i class="iconfont icon-search"></i></button>
 									</div>
 								</li>
-								<li><span class="tree-secondary-items">二级菜单</span>
+								<li><span class="tree-secondary-items open">二级菜单</span>
 									<ul>
 										<li><span class="tree-third-items have-chirld">三级菜单有四级</span>
 											<ul>
@@ -281,6 +291,80 @@
 								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
 								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
 								<li><span class="tree-secondary-items no-chirld">二级菜单</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</div>
+			
+			<div class="demo-row special-tree-menu">
+				<h3 class="demo-panel-title">Special Tree Menu</h3>
+				<li class="demo-items">
+					<ul class="special-tree">
+						<li class="primary-li">
+							<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+							<span class="primary-span">一级</span>
+							<ul>
+								<li class="secondary-li">
+									<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+									<span class="secondary-span">二级</span>
+									<ul>
+										<li class="thired-li">
+											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+											<span class="thired-span">三级</span>
+											<ul>
+												<li class="fourth-li">
+													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+													<span class="fourth-span">四级</span>
+												</li>
+												
+												<li class="fourth-li">
+													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+													<span class="fourth-span">四级</span>
+												</li>
+											</ul>
+										</li>
+										
+										<li class="thired-li">
+											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+											<span class="thired-span">三级</span>
+											<ul>
+												<li class="fourth-li">
+													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+													<span class="fourth-span">四级</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								
+								<li class="secondary-li">
+									<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+									<span class="secondary-span">二级</span>
+									<ul>
+										<li class="thired-li">
+											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+											<span class="thired-span">三级</span>
+											<ul>
+												<li class="fourth-li">
+													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+													<span class="fourth-span">四级</span>
+												</li>
+											</ul>
+										</li>
+										
+										<li class="thired-li">
+											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+											<span class="thired-span">三级</span>
+											<ul>
+												<li class="fourth-li">
+													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
+													<span class="fourth-span">四级</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -404,10 +488,18 @@
 				<h3 class="demo-panel-title">Tab</h3>
 				<li class="demo-items">
 					<ul class="tabs_menu">
-						<li class="js-tabs-btn1"><a>Tab1</a></li>
-						<li class="current js-tabs-btn2"><a>Tab2</a></li>
-						<li class="js-tabs-btn3"><a>Tab3</a></li>
-						<li class="js-tabs-btn4"><a>Tab4</a></li>
+						<li class="js-tabs-btn1">
+							<a>Tab1</a>
+						</li>
+						<li class="current js-tabs-btn2">
+							<a>Tab2</a>
+						</li>
+						<li class="js-tabs-btn3">
+							<a>Tab3</a>
+						</li>
+						<li class="js-tabs-btn4">
+							<a>Tab4</a>
+						</li>
 					</ul>
 
 					<div class="tabs_box">
@@ -434,10 +526,18 @@
 				<h3 class="demo-panel-title">Tab2</h3>
 				<li class="demo-items">
 					<ul class="tabs_menu2">
-						<li class="js-tabs-btn1"><a>月</a></li>
-						<li class="current js-tabs-btn2"><a>日</a></li>
-						<li class="js-tabs-btn3"><a>时</a></li>
-						<li class="js-tabs-btn4"><a>分</a></li>
+						<li class="js-tabs-btn1">
+							<a>月</a>
+						</li>
+						<li class="current js-tabs-btn2">
+							<a>日</a>
+						</li>
+						<li class="js-tabs-btn3">
+							<a>时</a>
+						</li>
+						<li class="js-tabs-btn4">
+							<a>分</a>
+						</li>
 					</ul>
 				</li>
 			</div>
@@ -448,7 +548,7 @@
 					<div class="switches open">
 						<div class="switches-circle"></div>
 					</div>
-					
+
 					<div class="switches">
 						<div class="switches-circle"></div>
 					</div>
@@ -520,9 +620,9 @@
 		<!---<<<<   分页组件  >>>>-->
 		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="lib/js/tipso.min.js"></script>
-		<script type="text/javascript" src="js/chart-body.js"></script>
 		<script type="text/javascript" src="lib/js/tabs.js"></script>
 		<script type="text/javascript" src="js/current.js"></script>
+		<script type="text/javascript" src="js/ui.js"></script>
 	</body>
 
 </html>
