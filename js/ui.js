@@ -149,7 +149,7 @@ $(".location-input-more-btn").on("click",function(){
 	$(".location-input-tree").toggle();
 })
 $(".form-location-input-more-btn").on("click",function(){
-	$(".from-location-input-tree").toggle();
+	$(".form-location-input-tree").toggle();
 })
 $(".location-input-tree").find("a").on("click",function(){
 	var text = $(this).text();
