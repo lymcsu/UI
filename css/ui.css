@@ -1292,7 +1292,7 @@
 }
 
 .delete-condition2:hover {
-	background-image: url(../img/black15%.png);
+	background-image: url(../img/black15.png);
 	background-repeat: repeat;
 }
 
@@ -1303,7 +1303,7 @@
 	margin: 9px 0;
 	display: block;
 	float: left;
-	background-image: url(../img/black15%.png);
+	background-image: url(../img/black15.png);
 	background-repeat: repeat;
 }
 
@@ -1375,7 +1375,7 @@
 	position: absolute;
 	left: 0;
 	top: 32px;
-	background-image: url(../img/black80%.png);
+	background-image: url(../img/black80.png);
 	background-repeat: repeat;
 	color: #FFF;
 	border: none;

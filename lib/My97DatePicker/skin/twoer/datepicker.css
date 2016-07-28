@@ -255,7 +255,8 @@
 	background: #F2F0F1;
 	display: block;
 	margin: 0 auto;
-	width: 123px;
+	width: 100%;
+	text-align: center;
 }
 
 .WdateDiv #dpTime td:first-child +td {
