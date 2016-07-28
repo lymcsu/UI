@@ -1673,7 +1673,7 @@ padding-top: 15px;
 .special-tree li,
 .special-tree li> a,
 .special-tree li> span {
-	padding: 4pt;
+	padding: 4px;
 	border-radius: 4px;
 }
 
