@@ -132,6 +132,10 @@ $('.special-tree').on('click','.special-tree-btn',function(){
 	$(this).toggleClass('open');
 	$(this).siblings('ul').slideToggle();
 })
+//地区选择输入框
+$(".location-input-more-btn").on("click",function(){
+	$(".location-input-tree").toggle();
+})
 
 $(function(){
     $(".special-tree").treemenu({delay:300}).openActive();
@@ -141,3 +145,5 @@ $(".special-tree").on('click','a',function(){
 	$('.special-tree a').removeClass('active');
 	$(this).addClass('active');
 });
+
+

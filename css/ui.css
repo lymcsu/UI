@@ -106,7 +106,8 @@
 .DeepColor-select-btn div i,
 .select-input-select-btn div i,
 .select-input-search-btn div i,
-.search-input-btn div i {
+.search-input-btn div i,
+.LocationInput div i {
 	line-height: 30px;
 	color: #24AC7E;
 	display: block;
@@ -190,7 +191,7 @@
 	height: 35px;
 	position: relative;
 }
-.Input{
+.Input,.LocationInput{
 	width: 260px;
 	overflow: hidden;
 }
@@ -207,7 +208,8 @@
 
 .SpanInput div,
 .Input div,
-.iconInput {
+.iconInput,
+.LocationInput div {
 	width: 260px;
     height: 35px;
     float: left;
@@ -221,7 +223,8 @@
 }
 .SpanInput input,
 .Input input,
-.iconInput input{
+.iconInput input,
+.LocationInput input{
 	width: 260px;
     height: 33px;
     float: left;
@@ -233,7 +236,25 @@
     position: relative;
     background: transparent url(0) no-repeat !important;
 }
-
+.LocationInput input{
+	width: 228px;
+}
+.location-input-more-btn{
+	width: 30px;
+	height: 33px;
+	float: right;
+    border-left: 1px solid #E1E6EB;
+    background: #FFF;
+    cursor: pointer;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+}
+.location-input-tree{
+	display: none;
+	border: 1px solid #E1E6EB;
+	border-top: none;
+}
 .iconInput input {
 	width: 165px;
 }
