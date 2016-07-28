@@ -278,6 +278,7 @@
 .LocationInput input,
 .form-LocationInput input {
 	width: 260px;
+<<<<<<< HEAD
 	height: 33px;
 	float: left;
 	z-index: 9999;
@@ -291,6 +292,20 @@
 
 .LocationInput input {
 	width: 228px;
+=======
+    height: 33px;
+    float: left;
+    z-index: 9999;
+    padding-left: 10px;
+    line-height: 33px;
+    color: #9DA2B6;
+    box-shadow: none;
+    position: relative;
+    background: transparent url(0) no-repeat !important;
+}
+.LocationInput input{
+	width: 225px;
+>>>>>>> origin/master
 }
 
 .form-LocationInput input {
@@ -1912,8 +1927,12 @@
 	border: 1px solid #E1E6EB;
 	background-color: #FAFAFA;
 }
+<<<<<<< HEAD
 
 .form-demo-items {
+=======
+.form-items{
+>>>>>>> origin/master
 	margin-bottom: 30px;
 }
 
