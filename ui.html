@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="lib/css/normal.css" />
 		<link rel="stylesheet" href="lib/font/iconfont.css" />
 		<link rel="stylesheet" href="lib/css/animate.min.css" />
+		<link rel="stylesheet" href="lib/css/jquery.treemenu.css" />
 		<link rel="stylesheet" href="css/ui.css" />
 		<link rel="stylesheet" href="css/demo.css" />
 	</head>
@@ -105,7 +106,7 @@
 					</div>
 				</li>
 			</div>
-			
+
 			<div class="demo-row demo-input">
 				<h3 class="demo-panel-title">DateInput</h3>
 				<li class="demo-items">
@@ -124,7 +125,7 @@
 					</div>
 				</li>
 			</div>
-			
+
 			<div class="demo-row demo-select">
 				<h3 class="demo-panel-title">Select</h3>
 				<li class="demo-items">
@@ -300,72 +301,66 @@
 					</ul>
 				</li>
 			</div>
-			
+
 			<div class="demo-row special-tree-menu">
 				<h3 class="demo-panel-title">Special Tree Menu</h3>
 				<li class="demo-items">
 					<ul class="special-tree">
-						<li class="primary-li">
-							<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-							<span class="primary-span">一级</span>
-							<ul class="open">
-								<li class="secondary-li">
-									<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-									<span class="secondary-span">二级</span>
-									<ul class="open">
-										<li class="thired-li">
-											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-											<span class="thired-span">三级</span>
-											<ul class="open">
-												<li class="fourth-li">
-													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-													<span class="fourth-span">四级</span>
-												</li>
-												
-												<li class="fourth-li">
-													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-													<span class="fourth-span">四级</span>
-												</li>
-											</ul>
+						<li><a>Category</a>
+							<ul>
+								<li>
+									<a>jQuery</a>
+									<ul>
+										<li>
+											<a>jQuery</a>
 										</li>
-										
-										<li class="thired-li">
-											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-											<span class="thired-span">三级</span>
-											<ul>
-												<li class="fourth-li">
-													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-													<span class="fourth-span">四级</span>
-												</li>
-											</ul>
+										<li>
+											<a>jQuery UI</a>
+										</li>
+										<li>
+											<a>jQuery Mobile</a>
 										</li>
 									</ul>
 								</li>
-								
-								<li class="secondary-li">
-									<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-									<span class="secondary-span">二级</span>
+								<li>
+									<a>JavaScript</a>
 									<ul>
-										<li class="thired-li">
-											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-											<span class="thired-span">三级</span>
-											<ul>
-												<li class="fourth-li">
-													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-													<span class="fourth-span">四级</span>
-												</li>
-											</ul>
+										<li>
+											<a>AngularJS</a>
 										</li>
-										
-										<li class="thired-li">
-											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-											<span class="thired-span">三级</span>
-											<ul>
-												<li class="fourth-li">
-													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
-													<span class="fourth-span">四级</span>
-												</li>
-											</ul>
+										<li>
+											<a>React</a>
+										</li>
+										<li>
+											<a>Backbone</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a>Golang</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>About</a>
+							<ul>
+								<li>
+									<a>Contact</a>
+								</li>
+								<li>
+									<a>Blog</a>
+								</li>
+								<li>
+									<a>Jobs</a>
+									<ul>
+										<li>
+											<a>Job 1</a>
+										</li>
+										<li>
+											<a>Job 2</a>
+										</li>
+										<li>
+											<a>Job 3</a>
 										</li>
 									</ul>
 								</li>
@@ -621,7 +616,8 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="lib/js/location.js" ></script>
+		<script type="text/javascript" src="lib/js/jquery.treemenu.js"></script>
+		<script type="text/javascript" src="lib/js/location.js"></script>
 		<!---<<<<   分页组件  >>>>-->
 		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="lib/js/tipso.min.js"></script>

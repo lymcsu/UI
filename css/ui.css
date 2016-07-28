@@ -313,10 +313,10 @@
 
 .Select-input input {
 	width: 198px;
-	height: 30px;
+	height: 33px;
 	padding: 0 10px;
 	background-color: #FAFAFA;
-	line-height: 30px;
+	line-height: 33px;
 }
 
 .select-input-select-btn .select-input-select-btn_icon {
