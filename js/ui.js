@@ -14,11 +14,18 @@ $('body').click(function(e) {
     		$('.SpanSelect').toggleClass('open');
     }
     
+    var _formSelect = $('.form-right .form-select-btn'); // 设置目标区域
+    if (!_formSelect.is(e.target) && _formSelect.has(e.target).length === 0) { 
+   	 	$('.form-right').removeClass('open');
+    } else {
+    	$('.form-right').toggleClass('open');
+    }
+    
     var _waitMeTask = $('.DeepColorSelect'); // 设置目标区域
     if (!_waitMeTask.is(e.target) && _waitMeTask.has(e.target).length === 0) { 
    	 	$('.DeepColorSelect').removeClass('open');
     } else {
-    		$('.DeepColorSelect').toggleClass('open');
+    	$('.DeepColorSelect').toggleClass('open');
     }
 });
 /*  dropdown、select打开ul js end */
@@ -27,6 +34,8 @@ $('body').click(function(e) {
 $(function(){
 	var	btnMenuChooseText = $('.select-menu li.choosed').text();
 	$('.select-btn p').text(btnMenuChooseText);
+	var	btnMenuChooseText1 = $('.form-select-menu li.choosed').text();
+	$('.form-select-btn p').text(btnMenuChooseText1);
 })
 
 $('.select-menu li').click(function(){
@@ -34,6 +43,13 @@ $('.select-menu li').click(function(){
 	$(this).addClass('choosed');
 	var	btnMenuChooseText = $('.select-menu li.choosed').text();
 	$('.select-btn p').text(btnMenuChooseText);
+});
+
+$('.form-select-menu li').click(function(){
+	$('.form-select-menu li').removeClass('choosed');
+	$(this).addClass('choosed');
+	var	btnMenuChooseText = $('.form-select-menu li.choosed').text();
+	$('.form-select-btn p').text(btnMenuChooseText);
 });
 /*  select选中改变btn文本 js end */
 
@@ -128,19 +144,24 @@ $('.viewFramework-main .tree-third-items').click(function(){
 	$(this).addClass('active');//点击的这个添加active
 });
 
-$('.special-tree').on('click','.special-tree-btn',function(){
-	$(this).toggleClass('open');
-	$(this).siblings('ul').slideToggle();
-})
 //地区选择输入框
 $(".location-input-more-btn").on("click",function(){
 	$(".location-input-tree").toggle();
+})
+$(".form-location-input-more-btn").on("click",function(){
+	$(".from-location-input-tree").toggle();
 })
 $(".location-input-tree").find("a").on("click",function(){
 	var text = $(this).text();
 	$(".LocationInput input").val(text);
 	$(".LocationInput span.placeholder").hide();
 	$(".location-input-tree").hide();
+})
+$(".form-location-input-tree").find("a").on("click",function(){
+	var text = $(this).text();
+	$(".form-LocationInput input").val(text);
+	$(".form-LocationInput span.placeholder").hide();
+	$(".form-location-input-tree").hide();
 })
 
 $(function(){
