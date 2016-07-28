@@ -136,6 +136,11 @@ $('.special-tree').on('click','.special-tree-btn',function(){
 $(".location-input-more-btn").on("click",function(){
 	$(".location-input-tree").toggle();
 })
+$(".location-input-tree").find("a").on("click",function(){
+	var text = $(this).text();
+	$(".LocationInput input").val(text);
+	$(".LocationInput span.placeholder").hide();
+})
 
 $(function(){
     $(".special-tree").treemenu({delay:300}).openActive();
