@@ -140,6 +140,7 @@ $(".location-input-tree").find("a").on("click",function(){
 	var text = $(this).text();
 	$(".LocationInput input").val(text);
 	$(".LocationInput span.placeholder").hide();
+	$(".location-input-tree").hide();
 })
 
 $(function(){
