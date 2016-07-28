@@ -10,6 +10,26 @@
 	text-align: left !important;
 }
 
+.zUIpanelScrollBox,
+.zUIpanelScrollBar {
+	width: 4px;
+	top: 4px;
+	right: 2px;
+	border-radius: 5px;
+}
+
+.zUIpanelScrollBox {
+	background: black;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+}
+
+.zUIpanelScrollBar {
+	background: #fff;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
 .iconBtn {
 	width: 35px;
 	height: 35px;
@@ -97,10 +117,12 @@
 	background: #FFF;
 	text-align: center;
 }
-.form-select-btn div{
+
+.form-select-btn div {
 	width: 33px;
 	height: 33px;
 }
+
 .dropdown-btn div {
 	margin-left: 14px;
 }
@@ -113,14 +135,14 @@
 .select-input-search-btn div i,
 .search-input-btn div i,
 .LocationInput div i,
-.form-LocationInput div i{
+.form-LocationInput div i {
 	line-height: 30px;
 	color: #24AC7E;
 	display: block;
 	text-align: center;
 }
 
-.form-select-btn div i{
+.form-select-btn div i {
 	line-height: 33px;
 }
 
@@ -206,15 +228,20 @@
 	height: 35px;
 	position: relative;
 }
-.Input,.LocationInput,.form-LocationInput{
+
+.Input,
+.LocationInput,
+.form-LocationInput {
 	width: 260px;
 	overflow: hidden;
 }
-.form-LocationInput{
+
+.form-LocationInput {
 	width: 100%;
 }
+
 .SpanSelect span,
-.SpanInput > span {
+.SpanInput> span {
 	display: block;
 	width: 85px;
 	float: left;
@@ -229,59 +256,69 @@
 .LocationInput div,
 .form-LocationInput div {
 	width: 260px;
-    height: 35px;
-    float: left;
-    background-color: #F8F8F8;
-    border: 1px solid #E1E6EB;
-    position: relative;
+	height: 35px;
+	float: left;
+	background-color: #F8F8F8;
+	border: 1px solid #E1E6EB;
+	position: relative;
 }
-.form-LocationInput div{
+
+.form-LocationInput div {
 	width: 100%;
 	background-color: #FAFAFA;
 }
+
 .iconInput {
 	width: 200px;
 }
+
 .SpanInput input,
 .Input input,
 .iconInput input,
 .LocationInput input,
-.form-LocationInput input{
+.form-LocationInput input {
 	width: 260px;
-    height: 33px;
-    float: left;
-    z-index: 9999;
-    padding-left: 10px;
-    line-height: 33px;
-    color: #9DA2B6;
-    box-shadow: none;
-    position: relative;
-    background: transparent url(0) no-repeat !important;
+	height: 33px;
+	float: left;
+	z-index: 9999;
+	padding-left: 10px;
+	line-height: 33px;
+	color: #9DA2B6;
+	box-shadow: none;
+	position: relative;
+	background: transparent url(0) no-repeat !important;
 }
-.LocationInput input{
+
+.LocationInput input {
 	width: 228px;
 }
-.form-LocationInput input{
+
+.form-LocationInput input {
 	width: 215px !important;
 	border: none !important;
 	float: left;
 }
-.location-input-more-btn,.form-location-input-more-btn{
+
+.location-input-more-btn,
+.form-location-input-more-btn {
 	width: 33px;
 	height: 33px;
 	float: right;
-    border-left: 1px solid #E1E6EB;
-    background: #FFF;
-    cursor: pointer;
-    text-align: center;
-    z-index: 99;
-    position: relative;
+	border-left: 1px solid #E1E6EB;
+	background: #FFF;
+	cursor: pointer;
+	text-align: center;
+	z-index: 99;
+	position: relative;
 }
-.location-input-tree,.form-location-input-tree{
+
+.location-input-tree,
+.form-location-input-tree {
 	display: none;
 	border: 1px solid #E1E6EB;
 	border-top: none;
 }
+
 .iconInput input {
 	width: 165px;
 }
@@ -307,21 +344,27 @@
 .select-input-select-btn .select-input-select-btn_icon {
 	margin-left: 0;
 }
-.form-select-btn{
+
+.form-select-btn {
 	width: 100%;
 	background-color: #FAFAFA;
 }
-.form-select-menu{
+
+.form-select-menu {
 	width: 250px !important;
+	top: 35px !important;
 }
-.select-menu,.form-select-menu {
+
+.select-menu,
+.form-select-menu {
 	width: 260px;
 	top: 32px;
 	right: 0;
 	z-index: 999999;
 }
 
-.select-menu li.choosed,.form-select-menu li.choosed {
+.select-menu li.choosed,
+.form-select-menu li.choosed {
 	color: #24AC7E;
 }
 
@@ -343,17 +386,22 @@
 	text-align: left;
 	padding-left: 10px;
 }
-.form-select-btn p{
+
+.form-select-btn p {
 	height: 33px;
 	line-height: 33px;
 }
+
 .SpanSelect.open .select-menu,
 .form-right.open .form-select-menu,
 .DeepColorSelect.open .DeepColor-select-menu,
 .dropdown-body.open .dropdown-menu {
 	display: block;
 }
-.select-btn,.DeepColor-select-btn,.form-select-btn{
+
+.select-btn,
+.DeepColor-select-btn,
+.form-select-btn {
 	border: 1px solid #E1E6EB;
 }
 
@@ -763,7 +811,7 @@
 	border-top: none;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu> li> a {
 	padding: 0;
 	line-height: inherit;
 }
@@ -796,7 +844,7 @@
 	color: #333;
 }
 
-.bulk-operation.open > ul {
+.bulk-operation.open> ul {
 	display: block;
 }
 
@@ -828,27 +876,27 @@
 	float: left;
 }
 
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
+.pagination> li:first-child> a,
+.pagination> li:first-child> span {
 	margin-left: 0;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
 
-.pagination > .disabled > span,
-.pagination > .disabled > span:hover,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > a,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
+.pagination> .disabled> span,
+.pagination> .disabled> span:hover,
+.pagination> .disabled> span:focus,
+.pagination> .disabled> a,
+.pagination> .disabled> a:hover,
+.pagination> .disabled> a:focus {
 	color: #777;
 	cursor: not-allowed;
 	background-color: #fff;
 	border-color: #ddd;
 }
 
-.pagination > li > a,
-.pagination > li > span {
+.pagination> li> a,
+.pagination> li> span {
 	position: relative;
 	float: left;
 	padding: 6px 12px;
@@ -860,32 +908,32 @@
 	border: 1px solid #ddd;
 }
 
-.pagination > .disabled > span,
-.pagination > .disabled > span:hover,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > a,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
+.pagination> .disabled> span,
+.pagination> .disabled> span:hover,
+.pagination> .disabled> span:focus,
+.pagination> .disabled> a,
+.pagination> .disabled> a:hover,
+.pagination> .disabled> a:focus {
 	color: #777;
 	cursor: not-allowed;
 	background-color: #fff;
 	border-color: #ddd;
 }
 
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
+.pagination> li:first-child> a,
+.pagination> li:first-child> span {
 	margin-left: 0;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
 
-.pagination > li {
+.pagination> li {
 	display: inline-block;
 	height: 32px;
 }
 
-.pagination > li > a,
-.pagination > li > span {
+.pagination> li> a,
+.pagination> li> span {
 	position: relative;
 	float: left;
 	padding: 6px 12px;
@@ -897,8 +945,8 @@
 	border: 1px solid #ddd;
 }
 
-.pagination > li > a,
-.pagination > li > span {
+.pagination> li> a,
+.pagination> li> span {
 	position: relative;
 	float: left;
 	padding: 6px 12px;
@@ -910,21 +958,21 @@
 	border: 1px solid #ddd;
 }
 
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
+.pagination> li> a:hover,
+.pagination> li> span:hover,
+.pagination> li> a:focus,
+.pagination> li> span:focus {
 	color: #24AC7E;
 	background-color: #eee;
 	border-color: #ddd;
 }
 
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
+.pagination> .active> a,
+.pagination> .active> span,
+.pagination> .active> a:hover,
+.pagination> .active> span:hover,
+.pagination> .active> a:focus,
+.pagination> .active> span:focus {
 	z-index: 2;
 	color: #fff;
 	cursor: default;
@@ -1022,6 +1070,7 @@
 
 
 /*  页面标题CSS  */
+
 .viewFramework-index-title {
 	width: 100%;
 	height: 62px;
@@ -1036,6 +1085,7 @@
 
 
 /*  页面标题左侧竖线   */
+
 .viewFramework-index-title:before {
 	content: '';
 	width: 2px;
@@ -1048,6 +1098,7 @@
 
 
 /* 树形菜单CSS */
+
 .tree,
 .special-tree {
 	color: #24AC7E;
@@ -1058,6 +1109,7 @@
 .special-tree {
 	background-color: #FFF;
 }
+
 
 /*.secondary-li,
 .thired-li,
@@ -1207,10 +1259,10 @@
 }
 
 .tree li.li-search {
-    padding: 7px;
+	padding: 7px;
 }
 
-.tree li span.open + ul {
+.tree li span.open+ ul {
 	display: block;
 }
 
@@ -1231,20 +1283,20 @@
 	color: #24AC7E;
 }
 
-.have-chirld + ul li {
+.have-chirld+ ul li {
 	height: 24px;
 	line-height: 24px;
 	cursor: pointer;
 	overflow: hidden;
 }
 
-.have-chirld + ul li span {
+.have-chirld+ ul li span {
 	color: #293038;
 	padding-left: 40px;
 	display: block;
 }
 
-.have-chirld + ul li:hover {
+.have-chirld+ ul li:hover {
 	background-color: #FAFBFC;
 }
 
@@ -1316,6 +1368,7 @@
 	background-color: #24AC7E;
 	color: #FFF;
 }
+
 
 /* chart 条件样式 */
 
@@ -1454,6 +1507,7 @@
 
 
 /* tab */
+
 .tabs_menu {
 	float: left;
 	height: 35px;
@@ -1503,16 +1557,16 @@
 }
 
 .tabs_box {
-height: 100%;
-width: 100%;
-padding-top: 35px;
+	height: 100%;
+	width: 100%;
+	padding-top: 35px;
 }
 
 .tabs-wapper {
 	display: none;
 	width: 100%;
-height: 100%;
-padding-top: 15px;
+	height: 100%;
+	padding-top: 15px;
 }
 
 .tabs_box .open.tabs-wapper {
@@ -1677,7 +1731,7 @@ padding-top: 15px;
 	background-color: #87BFAC;
 }
 
-.Wdate{
+.Wdate {
 	width: 100%;
 	height: 33px;
 	float: left;
@@ -1690,11 +1744,14 @@ padding-top: 15px;
 	background: transparent url(0) no-repeat !important;
 	margin-left: -33px;
 }
-.Wdate::-ms-clear{display:none;}
 
-.WdateFmtErr{
-	font-weight:bold;
-	color:red;
+.Wdate::-ms-clear {
+	display: none;
+}
+
+.WdateFmtErr {
+	font-weight: bold;
+	color: red;
 }
 
 .chooseSecond-input,
@@ -1707,14 +1764,17 @@ padding-top: 15px;
 	background-color: #F8F8F8;
 	border: 1px solid #E1E6EB;
 }
-.form-chooseSecond-input{
+
+.form-chooseSecond-input {
 	width: 100%;
 	background-color: #FAFAFA;
 }
-.form-chooseSecond-input input{
+
+.form-chooseSecond-input input {
 	border: none !important;
 	padding-left: 43px !important;
 }
+
 .chooseSecond-input:before,
 .form-chooseSecond-input:before,
 .chooseDay-input:before,
@@ -1737,6 +1797,8 @@ padding-top: 15px;
 .special-tree {
 	color: #293038;
 	width: 100%;
+	z-index: 9999;
+	position: relative;
 }
 
 .special-tree li,
@@ -1805,22 +1867,27 @@ padding-top: 15px;
 .special-tree li.tree-opened> .toggler:before {
 	content: "\2212";
 }
-.form-left,.form-right{
+
+.form-left,
+.form-right {
 	float: left;
 	height: 32px;
 	line-height: 32px;
 }
+
 .form-left {
 	width: 140px;
 	padding-right: 15px;
 	text-align: right;
 	color: #999;
 }
+
 .form-right {
 	width: 250px;
 	position: relative;
 	background-color: #FAFAFA;
 }
+
 .form-right input {
 	width: 100%;
 	height: 33px;
@@ -1834,7 +1901,8 @@ padding-top: 15px;
 	color: #9DA2B6;
 	background: transparent url(0) no-repeat !important;
 }
-.form-right textarea{
+
+.form-right textarea {
 	width: 250px;
 	max-width: 250px;
 	min-width: 250px;
@@ -1844,13 +1912,16 @@ padding-top: 15px;
 	border: 1px solid #E1E6EB;
 	background-color: #FAFAFA;
 }
-.form-demo-items{
+
+.form-demo-items {
 	margin-bottom: 30px;
 }
-.form-right.form-fileInput{
+
+.form-right.form-fileInput {
 	background-color: transparent;
 }
-.form-right.form-fileInput input{
+
+.form-right.form-fileInput input {
 	border: none;
 	height: auto;
 	line-height: 0;

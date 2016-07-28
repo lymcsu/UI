@@ -8,9 +8,7 @@ body {
 .demo {
 	width: 970px;
 	padding: 0 15px 100px;
-	position: absolute;
-	left: 50%;
-	margin-left: -485px;
+	margin: 0 auto;
 }
 
 .demo-title {
