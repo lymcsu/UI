@@ -289,19 +289,6 @@
 	background: transparent url(0) no-repeat !important;
 }
 
-.LocationInput input {
-	width: 228px;
-    height: 33px;
-    float: left;
-    z-index: 9999;
-    padding-left: 10px;
-    line-height: 33px;
-    color: #9DA2B6;
-    box-shadow: none;
-    position: relative;
-    background: transparent url(0) no-repeat !important;
-}
-
 .LocationInput input{
 	width: 225px;
 }
