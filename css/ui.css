@@ -211,25 +211,28 @@
 	text-align: right;
 }
 
-.SpanInput-input,.Input-input,.SearchInput-input{
+.SpanInput div,
+.Input div,
+.iconInput {
 	width: 260px;
-    height: 32px;
+    height: 35px;
     float: left;
     background-color: #FAFAFA;
-    padding-left: 10px;
     border: 1px solid #E1E6EB;
-    line-height: 32px;
     position: relative;
 }
-.SearchInput-input{
+
+.iconInput {
 	width: 200px;
-	border: 0;
 }
-.SpanInput input,.Input input,.SearchInput input{
+.SpanInput input,
+.Input input,
+.iconInput input{
 	width: 260px;
-    height: 32px;
+    height: 33px;
     float: left;
     z-index: 9999;
+    padding-left: 10px;
     line-height: 33px;
     color: #9DA2B6;
     box-shadow: none;
@@ -237,11 +240,26 @@
     background: transparent url(0) no-repeat !important;
 }
 
+.iconInput input {
+	width: 165px;
+}
+
+.iconInput button {
+	width: 33px;
+	height: 33px;
+	float: left;
+	background-color: #FFF;
+	color: #24AC7E;
+	z-index: 9;
+	position: relative;
+	border-left: 1px solid #E1E6EB;
+}
+
 .select-btn,
 .DeepColor-select-btn,
 .select-btn a,
 .DeepColor-select-btn a,
-.select-input-search-btn a,
+.iconInput button,
 .search-input-btn a,
 .select-input-select-btn .select-input-select-btn_icon {
 	margin-left: 0;
@@ -271,6 +289,8 @@
 	float: left;
 	height: 30px;
 	line-height: 30px;
+	text-align: left;
+	padding-left: 10px;
 }
 
 .SpanSelect.open .select-menu,
@@ -1002,6 +1022,11 @@
 .primary-li ul {
 	width: 100%;
 	float: left;
+	display: none;
+}
+
+.primary-li ul.open {
+	display: block;
 }
 
 .special-tree-btn,
@@ -1017,24 +1042,24 @@
 	background-color: #FFF;
 }
 
+.special-tree-btn i {
+	display: block;
+}
+
 .special-tree-btn:hover {
 	background-color: #FAFAFA;
 }
 
-.primary-li {
+.secondary-li {
 	padding-left: 5px;
 }
 
-.secondary-li {
+.thired-li {
 	padding-left: 10px;
 }
 
-.thired-li {
-	padding-left: 15px;
-}
-
 .fourth-li {
-	padding-left: 20px;
+	padding-left: 15px;
 }
 
 .fourth-li button {
@@ -1170,7 +1195,8 @@
 
 .have-chirld:before,
 .tree-secondary-items:before,
-.tree-primary-items:after {
+.tree-primary-items:after,
+.special-tree-btn i {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
@@ -1183,7 +1209,8 @@
 
 .tree-third-items.active.have-chirld:before,
 .tree-secondary-items.open:before,
-.tree-primary-items.open:after {
+.tree-primary-items.open:after,
+.special-tree-btn.open i {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
@@ -1594,6 +1621,21 @@ padding-top: 15px;
 .color-2 {
 	background-color: #87BFAC;
 }
-.DateTimeInput{
+
+.Wdate{
 	width: 240px;
+	height: 33px;
+	float: left;
+	padding-left: 10px;
+	line-height: 33px;
+	color: #9DA2B6;
+	border: 1px solid #E1E6EB;
+	box-shadow: none;
+	background:#fff url(../lib/My97DatePicker/skin/datePicker.png) no-repeat right;
+}
+.Wdate::-ms-clear{display:none;}
+
+.WdateFmtErr{
+	font-weight:bold;
+	color:red;
 }

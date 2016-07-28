@@ -83,29 +83,25 @@
 				<li class="demo-items">
 					<div class="SpanInput">
 						<span>自定义：</span>
-						<div class="SpanInput-input">
-							<input class="demo-input-item" type="text" autocomplete="off" />
+						<div>
+							<input type="text" autocomplete="off" />
 							<span class="placeholder">请输入</span>
 						</div>
 					</div>
 				</li>
 				<li class="demo-items">
 					<div class="Input">
-						<div class="Input-input">
-							<input class="demo-input-item" type="text" autocomplete="off" />
+						<div>
+							<input type="text" autocomplete="off" />
 							<span class="placeholder">请输入</span>
 						</div>
 					</div>
 				</li>
 				<li class="demo-items">
-					<div class="SearchInput demo-search-input">
-						<div class="SearchInput-input">
-							<input class="demo-input-item" type="text" autocomplete="off" />
-							<span class="placeholder">请输入</span>
-						</div>
-						<button class="search-input-btn">
-							<div><i class="iconfont icon-search"></i></div>
-						</button>
+					<div class="iconInput">
+						<span class="placeholder">请输入</span>
+						<input type="text" autocomplete="off" />
+						<button><i class="iconfont icon-search"></i></button>
 					</div>
 				</li>
 			</div>
@@ -113,15 +109,15 @@
 			<div class="demo-row demo-input">
 				<h3 class="demo-panel-title">DateInput</h3>
 				<li class="demo-items">
-					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" class="Wdate DateTimeInput" />
+					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" class="Wdate" />
 					<h5>选择到秒</h5>
 				</li>
 				<li class="demo-items">
-					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm',skin:'twoer'})" class="Wdate DateTimeInput" />
+					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm',skin:'twoer'})" class="Wdate" />
 					<h5>选择到分</h5>
 				</li>
 				<li class="demo-items">
-					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd',skin:'twoer'})" class="Wdate DateTimeInput" />
+					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd',skin:'twoer'})" class="Wdate" />
 					<h5>选择到日</h5>
 				</li>
 			</div>
@@ -309,15 +305,15 @@
 						<li class="primary-li">
 							<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
 							<span class="primary-span">一级</span>
-							<ul>
+							<ul class="open">
 								<li class="secondary-li">
 									<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
 									<span class="secondary-span">二级</span>
-									<ul>
+									<ul class="open">
 										<li class="thired-li">
 											<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
 											<span class="thired-span">三级</span>
-											<ul>
+											<ul class="open">
 												<li class="fourth-li">
 													<button class="special-tree-btn"><i class="iconfont icon-keyboardarrowright"></i></button>
 													<span class="fourth-span">四级</span>
@@ -622,13 +618,14 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="lib/js/location.js" ></script>
 		<!---<<<<   分页组件  >>>>-->
 		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="lib/js/tipso.min.js"></script>
 		<script type="text/javascript" src="lib/js/tabs.js"></script>
 		<script type="text/javascript" src="js/current.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>
-		<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
 	</body>
 
 </html>

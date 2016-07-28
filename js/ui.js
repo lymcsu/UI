@@ -127,3 +127,8 @@ $('.viewFramework-main .tree-third-items').click(function(){
 	$('.viewFramework-main .tree-third-items').removeClass('active');//三级菜单没有四级菜单的移除class active
 	$(this).addClass('active');//点击的这个添加active
 });
+
+$('.special-tree').on('click','.special-tree-btn',function(){
+	$(this).toggleClass('open');
+	$(this).siblings('ul').slideToggle();
+})

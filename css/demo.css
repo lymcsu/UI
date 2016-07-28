@@ -112,11 +112,15 @@ body {
 }
 
 .tree-menu {
-	width: 30%;
+	width: 22%;
+}
+
+.special-tree-menu {
+	margin-right: 30px;
 }
 
 .Color-Swatches {
-	width: 70%;
+	width: 52.188%;
 }
 
 .Color-Swatches ul {
@@ -124,6 +128,12 @@ body {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 20px;
+}
+
+.Color-Swatches .demo-items,
+.Color-Swatches ul.blue,
+.Color-Swatches ul.green2 {
+	margin-right: 0;
 }
 
 .Color-Swatches ul li {
@@ -298,11 +308,7 @@ body {
 	height: 20px;
 	line-height: 20px;
 }
-.demo-input-item{
-	width: 200px !important;
-	z-index: 999;
-	position: relative;
-}
+
 .demo-search-input{
 	width: 232px;
 }
