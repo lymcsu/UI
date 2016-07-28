@@ -1720,6 +1720,10 @@ padding-top: 15px;
 	color: #fff;
 }
 
+.special-tree .treemenu {
+	padding-left: 10px;
+}
+
 .special-tree li a.active:hover {
 	background-color: #34BC9D;
 }
