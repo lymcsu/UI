@@ -1906,9 +1906,13 @@
 	background-color: #FAFAFA;
 }
 
-.form-items{
+.form-items {
 	margin-bottom: 30px;
 	float: left;
+}
+
+.form-items.long-items .form-right {
+	width: 630px;
 }
 
 .form-right.form-fileInput {
