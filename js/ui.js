@@ -31,13 +31,6 @@ $('body').click(function(e) {
 /*  dropdown、select打开ul js end */
 
 /*  select选中改变btn文本 js  */
-$(function(){
-	var	btnMenuChooseText = $('.select-menu li.choosed').text();
-	$('.select-btn p').text(btnMenuChooseText);
-	var	btnMenuChooseText1 = $('.form-select-menu li.choosed').text();
-	$('.form-select-btn p').text(btnMenuChooseText1);
-})
-
 $('.select-menu li').click(function(){
 	$('.select-menu li').removeClass('choosed');
 	$(this).addClass('choosed');
@@ -54,11 +47,6 @@ $('.form-select-menu li').click(function(){
 /*  select选中改变btn文本 js end */
 
 /*  DeepColorselect选中改变btn文本 js  */
-$(function(){
-	var	btnMenuChooseText = $('.DeepColor-select-menu li.choosed').text();
-	$('.DeepColor-select-btn p').text(btnMenuChooseText);
-})
-
 $('.DeepColor-select-menu li').click(function(){
 	$('.DeepColor-select-menu li').removeClass('choosed');
 	$(this).addClass('choosed');
