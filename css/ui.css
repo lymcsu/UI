@@ -238,6 +238,11 @@
 
 .form-LocationInput {
 	width: 100%;
+	
+}
+
+.LocationInput {
+	position: relative;
 }
 
 .SpanSelect span,
@@ -417,14 +422,15 @@
 .Select-input {
 	width: 260px;
 	border: 1px solid #E1E6EB;
+	height: 32px;
 }
 
 .Select-input input {
 	width: 198px;
-	height: 33px;
+	height: 30px;
 	padding: 0 10px;
 	background-color: #FAFAFA;
-	line-height: 33px;
+	line-height: 30px;
 }
 
 .select-input-select-btn .select-input-select-btn_icon {
@@ -557,12 +563,17 @@
 #store-selector .close {
 	display: none;
 	position: absolute;
-	z-index: 2;
+	z-index: 99999;
 	cursor: pointer;
 	width: 17px;
 	height: 17px;
-	top: 32px;
-	left: 320px;
+	top: 40px;
+	left: 296px;
+}
+
+
+#store-selector div.close i {
+	line-height: 18px;
 }
 
 #store-selector a:hover {
@@ -618,8 +629,9 @@
 #store-selector .content {
 	display: none;
 	position: absolute;
-	top: 32px;
-	left: -45px;
+	z-index: 99999;
+	top: 34px;
+	left: -65px;
 	border: 1px solid #E1E6EB;
 	width: 390px;
 	padding: 15px;
