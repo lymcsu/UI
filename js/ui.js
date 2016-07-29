@@ -146,22 +146,22 @@ $('.viewFramework-main .tree-third-items').click(function(){
 
 //地区选择输入框
 $(".location-input-more-btn").on("click",function(){
-	$(".location-input-tree").toggle();
+	$(".location-input-tree").slideToggle();
 })
 $(".form-location-input-more-btn").on("click",function(){
-	$(".form-location-input-tree").toggle();
+	$(".form-location-input-tree").slideToggle();
 })
 $(".location-input-tree").find("a").on("click",function(){
 	var text = $(this).text();
 	$(".LocationInput input").val(text);
-	$(".LocationInput span.placeholder").hide();
-	$(".location-input-tree").hide();
+	$(".LocationInput span.placeholder").slideUp();
+	$(".location-input-tree").slideUp();
 })
 $(".form-location-input-tree").find("a").on("click",function(){
 	var text = $(this).text();
 	$(".form-LocationInput input").val(text);
-	$(".form-LocationInput span.placeholder").hide();
-	$(".form-location-input-tree").hide();
+	$(".form-LocationInput span.placeholder").slideUp();
+	$(".form-location-input-tree").slideUp();
 })
 
 $(function(){
