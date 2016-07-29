@@ -97,7 +97,9 @@
 	background: #FFF;
 	text-align: center;
 }
-
+.select-btn{
+	background-color: #FAFAFA;
+}
 .form-select-btn div {
 	width: 33px;
 	height: 33px;
@@ -243,7 +245,7 @@
 	width: 260px;
 	height: 35px;
 	float: left;
-	background-color: #F8F8F8;
+	background-color: #FAFAFA;
 	border: 1px solid #E1E6EB;
 	position: relative;
 }
@@ -1754,7 +1756,7 @@
 	position: relative;
 	width: 240px;
 	height: 35px;
-	background-color: #F8F8F8;
+	background-color: #FAFAFA;
 	border: 1px solid #E1E6EB;
 }
 
