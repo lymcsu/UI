@@ -1908,6 +1908,7 @@
 
 .form-items{
 	margin-bottom: 30px;
+	float: left;
 }
 
 .form-right.form-fileInput {
