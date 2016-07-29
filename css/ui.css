@@ -1938,3 +1938,10 @@
 	height: auto;
 	line-height: 0;
 }
+
+.form-left span i {
+	font-size: 10px;
+	color: #E44E4E;
+	margin-right: 10px;
+	line-height: 32px;
+}
